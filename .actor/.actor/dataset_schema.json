@@ -1,0 +1,132 @@
+{
+  "title": "TikTok Hashtag Data",
+  "type": "object",
+  "properties": {
+    "hashtag": {
+      "title": "Hashtag",
+      "type": "string",
+      "description": "The hashtag name without # symbol"
+    },
+    "views": {
+      "title": "Views",
+      "type": "string",
+      "description": "Number of views for this hashtag"
+    },
+    "posts": {
+      "title": "Posts",
+      "type": "string",
+      "description": "Number of posts using this hashtag"
+    },
+    "position": {
+      "title": "Position",
+      "type": "integer",
+      "description": "Position in trending list (if applicable)"
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "Type of hashtag (trending, searched, monitored)"
+    },
+    "scrapedAt": {
+      "title": "Scraped At",
+      "type": "string",
+      "description": "ISO timestamp when data was scraped"
+    },
+    "scrapeMode": {
+      "title": "Scrape Mode",
+      "type": "string",
+      "description": "Mode used for scraping (trending, search, monitor)"
+    },
+    "topVideos": {
+      "title": "Top Videos",
+      "type": "array",
+      "description": "Array of top videos using this hashtag",
+      "items": {
+        "type": "object",
+        "properties": {
+          "videoId": {
+            "title": "Video ID",
+            "type": "string"
+          },
+          "author": {
+            "title": "Author",
+            "type": "string"
+          },
+          "likes": {
+            "title": "Likes",
+            "type": "integer"
+          },
+          "comments": {
+            "title": "Comments",
+            "type": "integer"
+          },
+          "shares": {
+            "title": "Shares",
+            "type": "integer"
+          },
+          "views": {
+            "title": "Views",
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "relatedHashtags": {
+      "title": "Related Hashtags",
+      "type": "array",
+      "description": "Array of related hashtags",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sentimentAnalysis": {
+      "title": "Sentiment Analysis",
+      "type": "object",
+      "description": "Sentiment analysis of comments",
+      "properties": {
+        "averageScore": {
+          "title": "Average Score",
+          "type": "number"
+        },
+        "averageComparative": {
+          "title": "Average Comparative",
+          "type": "number"
+        },
+        "totalComments": {
+          "title": "Total Comments",
+          "type": "integer"
+        },
+        "sentiment": {
+          "title": "Sentiment",
+          "type": "string"
+        }
+      }
+    },
+    "topInfluencers": {
+      "title": "Top Influencers",
+      "type": "array",
+      "description": "Array of top influencers using this hashtag",
+      "items": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "followers": {
+            "title": "Followers",
+            "type": "integer"
+          },
+          "engagement": {
+            "title": "Engagement Rate",
+            "type": "number"
+          },
+          "postsWithHashtag": {
+            "title": "Posts with Hashtag",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
