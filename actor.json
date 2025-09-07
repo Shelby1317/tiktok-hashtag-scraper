@@ -1,0 +1,19 @@
+{
+  "actorSpecification": 1,
+  "name": "tiktok-hashtag-scraper",
+  "title": "🔥 TikTok Hashtag Scraper Pro",
+  "description": "Advanced TikTok hashtag scraper with trending analysis, real-time monitoring, and comprehensive data extraction. Perfect for marketers, researchers, and content creators.",
+  "version": "1.0.0",
+  "meta": {
+    "templateId": "javascript-node"
+  },
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "categories": ["SOCIAL_MEDIA"],
+  "storefront": {
+    "brandColor": "#FF0050",
+    "logoUrl": "https://raw.githubusercontent.com/apify/store-assets/master/actors/tiktok-scraper/logo.png"
+  },
+  "datasetSchema": "./dataset_schema.json"
+}
