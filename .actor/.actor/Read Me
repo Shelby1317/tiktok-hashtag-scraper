@@ -1,0 +1,37 @@
+
+## 📊 Output Schema
+
+```json
+{
+  "hashtag": "fyp",
+  "views": "2.1B",
+  "posts": "15M",
+  "position": 1,
+  "type": "trending",
+  "scrapedAt": "2024-01-15T10:30:00Z",
+  "scrapeMode": "trending",
+  "topVideos": [
+    {
+      "videoId": "video123",
+      "author": "creator_name",
+      "likes": 50000,
+      "comments": 1200,
+      "shares": 800,
+      "views": 250000
+    }
+  ],
+  "relatedHashtags": ["fypchallenge", "fyptrend", "viralfyp"],
+  "sentimentAnalysis": {
+    "averageScore": 0.8,
+    "sentiment": "positive",
+    "totalComments": 1000
+  },
+  "topInfluencers": [
+    {
+      "username": "top_creator",
+      "followers": 1000000,
+      "engagement": 8.5,
+      "postsWithHashtag": 25
+    }
+  ]
+}
